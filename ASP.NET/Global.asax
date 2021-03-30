@@ -8,6 +8,8 @@
         scriptResDef.Path = "~/Script/jquery-3.2.1.min.js";
         ScriptManager.ScriptResourceMapping.AddDefinition("jquery", scriptResDef);
 
+        Application["message"] = "<hr />";
+
     }
     
     void Application_End(object sender, EventArgs e) 
