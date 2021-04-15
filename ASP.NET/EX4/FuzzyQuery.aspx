@@ -11,8 +11,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:TextBox runat="server" ID="txtSearch" />
-            <asp:Button runat="server" ID="btnSearch" Text="搜索" />
-            <asp:Button runat="server" ID="btnReturn" Text="返回" />
+            <asp:Button runat="server" ID="btnSearch" Text="搜索" OnClick="btnSearch_Click" />
+            <asp:Button runat="server" ID="btnReturn" Text="返回" OnClick="btnReturn_Click" />
             <asp:GridView runat="server" ID="gvCategory" />
             <asp:Label runat="server" ID="lblMsg" />
         </div>
