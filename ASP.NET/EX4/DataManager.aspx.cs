@@ -56,4 +56,14 @@ public partial class EX4_DataManager : System.Web.UI.Page
         db.SubmitChanges();
         Bind();
     }
+
+    protected void btnOrder_Click(object sender, EventArgs e)
+    {
+        DataClassesDataContext db = new DataClassesDataContext();
+        var results = from r in db.Product
+                      orderby r.UnitCost descending
+                      select r;
+        gvCategory.DataSource = results;
+        gvCategory.DataBind();
+    }
 }

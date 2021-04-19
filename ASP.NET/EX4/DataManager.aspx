@@ -17,6 +17,7 @@
             <asp:Button runat="server" ID="btnUpdate" Text="修改" OnClick="btnUpdate_Click" />
             <asp:Button runat="server" ID="btnInsert" Text="插入" OnClick="btnInsert_Click" />
             <asp:Button runat="server" ID="btnDelete" Text="删除" OnClick="btnDelete_Click" />
+           <asp:Button runat="server" ID="btnOrder" Text="降序" OnClick="btnOrder_Click" />
             <br/>
             <asp:GridView runat="server" ID="gvCategory" />
 

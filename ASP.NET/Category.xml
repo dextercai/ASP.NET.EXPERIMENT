@@ -25,4 +25,9 @@
     <Name>Endangered</Name>
     <Descn>Endangered</Descn>
   </Category>
+  <Category>
+    <CategoryId>7</CategoryId>
+    <Name>455</Name>
+    <Descn>555</Descn>
+  </Category>
 </Categories>

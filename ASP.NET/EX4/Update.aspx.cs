@@ -12,7 +12,7 @@ public partial class EX4_Update : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            string categoryId = Request.QueryString["CategryId"];
+            string categoryId = Request.QueryString["CategoryId"];
             var category = (from c in db.Category where c.CategoryId == int.Parse(categoryId) select c).First();
             txtCategoryId.Text = categoryId;
             txtCategoryId.ReadOnly = true;

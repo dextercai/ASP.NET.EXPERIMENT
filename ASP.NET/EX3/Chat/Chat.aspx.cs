@@ -15,8 +15,6 @@ public partial class EX3_Chat_Chat : System.Web.UI.Page
             Application["message"] = Session["user"] + "进入聊天室<br>" + Application["message"];
         }
     }
-
-
     protected void btnSend_Click(object sender, EventArgs e)
     {
         Application.Lock();
